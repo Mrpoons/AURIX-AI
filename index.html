@@ -15,6 +15,71 @@ h1{font-size:clamp(23px,4vw,32px);text-align:center;margin:0 0 8px}.intro{text-a
 .hero{background:linear-gradient(120deg,#342712,#19170f 75%);border:1px solid #80632f;border-radius:15px;padding:18px;margin-bottom:15px}.hero .kicker{color:var(--gold2);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.hero .amount{font-size:clamp(30px,5vw,43px);font-weight:800;letter-spacing:-1px;margin:3px 0;color:#ffe4a8}.hero .small{font-size:12px;color:#c5b99e}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:13px}.stat .label{font-size:11px;color:var(--muted)}.stat .value{font-size:19px;font-weight:700;margin-top:3px}.projections{margin-top:20px}.projections h3{font-size:13px;color:var(--gold2);letter-spacing:1px;text-transform:uppercase}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:right;padding:11px 8px;border-bottom:1px solid var(--line);white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:500}td{font-variant-numeric:tabular-nums}.positive{color:var(--green)}.disclaimer{font-size:11px;color:#999;margin:18px 2px 0;line-height:1.55}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.btn{border:1px solid #9a773b;background:linear-gradient(120deg,#d9b15f,#a77b32);color:#17130c;font-weight:750;border-radius:10px;padding:11px 15px;cursor:pointer}.btn.secondary{background:transparent;color:var(--gold2);border-color:#5a4829}.footer{text-align:center;color:#777;font-size:11px;margin-top:25px}
 @media(max-width:760px){.layout{grid-template-columns:1fr}.wrap{padding:12px 13px 32px}.card{padding:18px}.stats{grid-template-columns:1fr 1fr}.brand{margin-bottom:8px}.intro{font-size:clamp(6px,1.65vw,11px);margin-bottom:18px}}
+
+/* AURIX AI — finition premium 3D (habillage uniquement) */
+:root{--gold:#d9ad55;--gold2:#ffe3a0;--line:#66502b}
+.card{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(43,36,25,.96) 0%,rgba(22,23,28,.98) 38%,rgba(10,11,15,.99) 100%);border:1px solid transparent;border-radius:20px;background-clip:padding-box;box-shadow:inset 0 1px 0 #fff2,inset 0 -2px 8px #000b,0 18px 38px #0009,0 0 0 1px #b88a3d66,0 0 22px #d8ad581c}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:1px;background:linear-gradient(90deg,transparent,#fff9,#d8ad58,transparent);pointer-events:none}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(125deg,#fff0 20%,#fff08 42%,#fff0 56%);opacity:.28;pointer-events:none}
+.card h2{text-shadow:0 1px 0 #000,0 0 12px #e6bd6870}
+.field input,.field select{background:linear-gradient(180deg,#17191f,#090a0e);border:1px solid #80632f;border-radius:11px;box-shadow:inset 0 3px 8px #000b,inset 0 1px 0 #fff1,0 1px 0 #ffffff0a;transition:border-color .2s,box-shadow .2s,transform .2s}
+.field input:hover,.field select:hover{border-color:#d6ad61;box-shadow:inset 0 3px 8px #000b,0 0 12px #d8ad5830}
+.field input:focus,.field select:focus{border-color:#ffe0a0;box-shadow:inset 0 2px 6px #0009,0 0 0 2px #d8ad5840,0 0 18px #d8ad5850}
+.stat{background:linear-gradient(145deg,#29251d,#17191f 58%,#101115);border:1px solid #80632f;box-shadow:inset 0 1px 0 #fff2,inset 0 -3px 8px #0009,0 7px 16px #0005,0 0 12px #d8ad5815;position:relative;overflow:hidden}
+.stat:before{content:"";position:absolute;left:10%;right:10%;top:0;height:1px;background:linear-gradient(90deg,transparent,#ffe6aa,transparent)}
+.stat .value{text-shadow:0 0 12px #e2b85b55}
+.btn{background:linear-gradient(180deg,#ffe4a0 0%,#d9ad55 38%,#9b6c27 100%);border:1px solid #ffe4a0;border-bottom-color:#694719;border-radius:11px;box-shadow:inset 0 1px 0 #fff9,inset 0 -2px 3px #714b1c88,0 5px 0 #60431e,0 8px 16px #0008,0 0 15px #d8ad5830;text-shadow:0 1px 0 #fff6;transition:transform .15s,filter .15s,box-shadow .15s}
+.btn:hover{filter:brightness(1.12);transform:translateY(-1px);box-shadow:inset 0 1px 0 #fff,0 6px 0 #60431e,0 11px 20px #0009,0 0 22px #e9c16b66}
+.btn:active{transform:translateY(3px);box-shadow:inset 0 2px 5px #714b1c88,0 2px 0 #60431e,0 4px 9px #0008}
+.btn.secondary{background:linear-gradient(180deg,#29251d,#15161b);color:#ffe3a0;border:1px solid #b38a45;box-shadow:inset 0 1px 0 #fff2,inset 0 -2px 4px #0009,0 4px 0 #08090c,0 7px 14px #0008,0 0 12px #d8ad5820;text-shadow:0 0 9px #d8ad5855}
+.btn.secondary:hover{border-color:#ffe3a0;filter:brightness(1.15)}
+.switchrow{border-top:1px solid #6c542d}
+.slider{background:linear-gradient(180deg,#555963,#292c33);box-shadow:inset 0 2px 5px #000b,0 1px 0 #fff2;border:1px solid #6d7078}
+.slider:before{background:linear-gradient(145deg,#fff,#c8c8c8);box-shadow:0 2px 5px #0009,inset 0 1px 0 #fff}
+.switch input:checked+.slider{background:linear-gradient(180deg,#f3d17e,#9d7029);border-color:#ffe4a0;box-shadow:inset 0 2px 5px #6b4818,0 0 12px #d8ad5860}
+th{color:#e8c77f;text-shadow:0 0 8px #d8ad5830}
+td{border-bottom-color:#554326}
+@media(prefers-reduced-motion:no-preference){.card,.stat,.btn,.field input,.field select{transition:box-shadow .2s,border-color .2s,transform .2s}}
+
+
+/* AURIX AI — ajustements visuels complémentaires */
+.wrap{padding-top:18px}
+.brand{margin-bottom:0}
+.brand-logo{margin-bottom:-13px}
+.brand-logo img{max-height:260px;filter:drop-shadow(0 10px 24px #000b) drop-shadow(0 0 12px #d8ad5840)}
+h1{position:relative;margin-top:0;margin-bottom:10px;text-shadow:0 2px 0 #000,0 0 18px #d8ad5850;letter-spacing:-.55px}
+.intro{color:#e0d4bc;font-weight:550;text-shadow:0 1px 8px #000; margin-bottom:22px}
+.card{border:1px solid #a77c37;background:#101115;box-shadow:inset 0 -3px 8px #0009,0 18px 42px #000b,0 0 0 1px #e0b45a44}
+.card h2{font-size:16px;color:#ffe4a3;letter-spacing:1.7px;text-shadow:0 1px 0 #000,0 0 15px #e6bd6890}
+.field label{color:#fff0cc;font-size:13px;font-weight:700;letter-spacing:.15px;text-shadow:0 1px 5px #000}
+.field input,.field select{min-height:48px;padding:13px 15px;color:#fff8e9;font-size:15px;font-weight:650;border:1px solid #b68b46;background:linear-gradient(180deg,#24232a 0%,#0b0c11 100%);box-shadow:inset 0 3px 9px #000d,inset 0 1px 0 #fff2,0 0 0 1px #d8ad581c,0 5px 12px #0006}
+.field input:hover,.field select:hover{border-color:#ffe0a0;box-shadow:inset 0 3px 9px #000d,0 0 0 1px #ffe0a055,0 0 18px #d8ad5850}
+.field input:focus,.field select:focus{border-color:#fff0bd;box-shadow:inset 0 2px 7px #000b,0 0 0 3px #d8ad5860,0 0 22px #d8ad5870}
+.hint{color:#e2c98e;font-weight:550}
+.switchrow span{color:#fff0cc;font-weight:650}
+.stat .label{color:#e8d5ae;font-weight:600}
+.stat .value{color:#fff0c8;text-shadow:0 1px 8px #d8ad5830}
+.hero .kicker{font-weight:750;text-shadow:0 1px 8px #d8ad5860}
+.hero .amount{text-shadow:0 2px 0 #684819,0 0 18px #f0c66b80}
+.projections h3{color:#ffe2a0;font-weight:750}
+th{color:#f0d9a8;font-weight:700}
+td{color:#f8f2e7}
+.footer{margin:28px auto 0;padding-top:16px;border-top:1px solid #8e6a35;color:#c9b58e;text-align:center;font-size:11px;letter-spacing:.65px;text-shadow:0 1px 8px #000}
+@media(max-width:760px){.brand-logo{margin-bottom:-8px}.brand-logo img{max-height:220px}.field input,.field select{min-height:46px}}
+
+
+/* AURIX AI — dernières retouches demandées */
+.hero{background:#090a0d !important;box-shadow:none !important;}
+.hero .amount{color:#c9cdd3 !important;text-shadow:0 1px 0 #fff6,0 2px 3px #000 !important;}
+.hero .small{font-weight:800 !important;color:#eee !important;}
+.projections table td{font-weight:800 !important;}
+
+
+/* AURIX AI — fond mat des indicateurs et résumé discret */
+.hero .small{font-weight:400 !important;color:#c5b99e !important;text-shadow:none !important;}
+.stat{background:#101115 !important;box-shadow:inset 0 -2px 6px #0009,0 7px 16px #0005,0 0 0 1px #d8ad5810 !important;}
+.stat:before{display:none !important;}
+.stat .value{text-shadow:none !important;}
 </style>
 </head>
 <body>
@@ -47,7 +112,7 @@ h1{font-size:clamp(23px,4vw,32px);text-align:center;margin:0 0 8px}.intro{text-a
       <p class="disclaimer"><strong>Important :</strong> simulation mathématique indicative, et non prévision ou promesse de rendement. Les résultats supposent que le gain saisi est réalisé chaque jour. Ils ne tiennent pas compte des pertes, du drawdown, des spreads, commissions, swaps, retraits, impôts ni des conditions de marché. Le trading comporte un risque de perte en capital. Les performances passées ou simulées ne garantissent pas les performances futures.</p>
     </section>
   </main>
-  <div class="footer">AURIX AI · Outil de simulation non contractuel</div>
+  <div class="footer">© 2026 AURIX AI · Tous droits réservés · Outil de simulation non contractuel</div>
 </div>
 <script>
 const $=id=>document.getElementById(id);
